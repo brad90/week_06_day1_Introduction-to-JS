@@ -85,21 +85,29 @@
 function additionOfNumbers(arrayOfNumbers){
   sum = 0
   for(num of arrayOfNumbers){
-    sum += num
+    sum += num;
   }
-  return sum
-};
+  return sum;
+}
 
 console.log(additionOfNumbers([1,2,3,4]));
 
 var doesItHaveAKey = function(object, string){
-  for (key in object){
-    if (object.name === string){
-      return true;}
-      else{
-        return false
-      }
+  for (var key in object){
+    if (key === string){
+      return true;
     }
   }
+  return false;
+}
 
-  console.log(doesItHaveAKey({name: 'Wojtek', age: 30}, "Wojtek"))
+  console.log(doesItHaveAKey({name: 'Wojtek', age: 30}, "haircolor"))
+
+
+// arrow function
+var multiply = (firstNumber, secondNumber) => firstNumber * secondNumber
+var double = number => number * 2
+
+
+console.log(multiply(2,3))
+console.log(double(15))
