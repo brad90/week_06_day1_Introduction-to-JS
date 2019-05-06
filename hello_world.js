@@ -82,32 +82,44 @@
 // Your function should return true if the given string is a key on the given object and false if the object does not have a key that matches the string. Store this function in an appropriately named variable to invoke it.
 
 
-function additionOfNumbers(arrayOfNumbers){
-  sum = 0
-  for(num of arrayOfNumbers){
-    sum += num;
-  }
-  return sum;
+// function additionOfNumbers(arrayOfNumbers){
+//   sum = 0
+//   for(num of arrayOfNumbers){
+//     sum += num;
+//   }
+//   return sum;
+// }
+//
+// console.log(additionOfNumbers([1,2,3,4]));
+//
+// var doesItHaveAKey = function(object, string){
+//   for (var key in object){
+//     if (key === string){
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+//
+//   console.log(doesItHaveAKey({name: 'Wojtek', age: 30}, "haircolor"))
+//
+//
+// // arrow function
+// var multiply = (firstNumber, secondNumber) => firstNumber * secondNumber
+// var double = number => number * 2
+//
+//
+// console.log(multiply(2,3))
+// console.log(double(15))
+
+var name = 'Bob'
+
+var secretsFunction = function () {
+  var pinCode = [0,0,0,0];
+  console.log('pinCode inside function:', pinCode)
+  console.log('name inside fucntion:', name)
+
 }
 
-console.log(additionOfNumbers([1,2,3,4]));
-
-var doesItHaveAKey = function(object, string){
-  for (var key in object){
-    if (key === string){
-      return true;
-    }
-  }
-  return false;
-}
-
-  console.log(doesItHaveAKey({name: 'Wojtek', age: 30}, "haircolor"))
-
-
-// arrow function
-var multiply = (firstNumber, secondNumber) => firstNumber * secondNumber
-var double = number => number * 2
-
-
-console.log(multiply(2,3))
-console.log(double(15))
+secretsFunction();
+console.log('name outside fucntion:', name)
